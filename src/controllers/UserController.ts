@@ -10,9 +10,7 @@ const users = [
 
 class UserController {
   async index(req: Request, res: Response) {
-    return res.json({
-      users
-    })
+    return res.json(users)
   }
 
   async create(req: Request, res: Response) {

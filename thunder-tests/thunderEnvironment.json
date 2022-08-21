@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "a97ad800-ef0e-4b4c-bd12-a8695b39974c",
+    "name": "DEV_ENV",
+    "default": true,
+    "sortNum": 10000,
+    "created": "2022-08-21T13:43:32.013Z",
+    "modified": "2022-08-21T13:43:56.347Z",
+    "data": [
+      {
+        "name": "host",
+        "value": "http://localhost:3333"
+      }
+    ]
+  }
+]

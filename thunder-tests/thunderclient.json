@@ -12,5 +12,19 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "a01fea04-36f8-4755-9c23-59b10d4cc3e9",
+    "colId": "713d0b97-628d-48ab-9b20-35fde3f77a5f",
+    "containerId": "11b1caa3-4ef6-4c87-b5b8-2586240afb02",
+    "name": "User List",
+    "url": "{{host}}/users",
+    "method": "GET",
+    "sortNum": 30000,
+    "created": "2022-08-21T14:00:26.269Z",
+    "modified": "2022-08-21T14:00:58.433Z",
+    "headers": [],
+    "params": [],
+    "tests": []
   }
 ]

@@ -24,12 +24,14 @@ class UserController {
       email
     }
 
+    users.push(to)
+
     const message = {
       subject: 'Usuário criado',
       body: `<p>Seu usuário foi criado com sucesso!</p>`
     }
 
-    emailService.sendMail(to, message)
+    emailService.sendMail({ to, message })
 
     return res.json({
       message: message.subject,

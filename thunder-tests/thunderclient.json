@@ -26,5 +26,24 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "69031c51-699c-4c7d-a797-bafd3ea15477",
+    "colId": "713d0b97-628d-48ab-9b20-35fde3f77a5f",
+    "containerId": "11b1caa3-4ef6-4c87-b5b8-2586240afb02",
+    "name": "User Create",
+    "url": "{{host}}/users",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2022-08-21T14:46:38.560Z",
+    "modified": "2022-08-21T14:52:33.084Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"Matheus\",\n  \"email\": \"matheus@teste.com\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

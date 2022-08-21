@@ -1,4 +1,5 @@
 import { Request, Response } from 'express'
+import EmailService from '../services/EmailService'
 
 const users = [
   {
@@ -11,6 +12,28 @@ class UserController {
   async index(req: Request, res: Response) {
     return res.json({
       users
+    })
+  }
+
+  async create(req: Request, res: Response) {
+    const { name, email } = req.body
+    const emailService = new EmailService()
+
+    const to = {
+      name,
+      email
+    }
+
+    const message = {
+      subject: 'Usuário criado',
+      body: `<p>Seu usuário foi criado com sucesso!</p>`
+    }
+
+    emailService.sendMail(to, message)
+
+    return res.json({
+      message: message.subject,
+      user: to
     })
   }
 }
